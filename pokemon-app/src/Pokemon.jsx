@@ -11,15 +11,15 @@ const Pokemon = ({ url }) => {
         };
         getPokemon();
     }, []);
-    
+
     if (!poke) return null;
 
     return (
         <div>
             <div>
-                <p>
+                <h4>
                     <strong>{poke.name}</strong>
-                </p>
+                </h4>
                 <div>
                     <img src={poke.sprites.front_default} alt="" />
                 </div>

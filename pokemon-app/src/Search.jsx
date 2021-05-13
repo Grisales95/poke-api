@@ -9,9 +9,11 @@ function Search({handleSearch}){
           <option value="normal">Normal</option>
           <option value="fighting">Fighting</option>
           <option value="flying">Flying</option>
+          <option value="poison">Poison</option>
+          <option value="dragon">Dragon</option>
+          <option value="ghost">Ghost</option>
           </select>
           <button onClick={()=>handleSearch(value)}>Search</button>
-          <input type="reset" value="Borrar información"/>
     
     </div>
   )
