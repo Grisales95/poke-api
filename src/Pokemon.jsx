@@ -11,7 +11,7 @@ const Pokemon = ({ url }) => {
             setPoke(data.data);
         };
         getPokemon();
-    }, []);
+    }, [url]);
 
     if (!poke) return null;
 
