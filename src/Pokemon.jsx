@@ -21,7 +21,7 @@ const Pokemon = ({ url }) => {
             <h5 className="color-title"> {poke.name}</h5>
             <img src={poke.sprites.front_default} alt="" width="120px" />
              <p className="color-p">
-                 {poke.types.map(item => <div className="d-flex justify-content-center">{item.type.name}</div>)}
+                 {poke.types.map(item => <div key = {item}className="d-flex justify-content-center">{item.type.name}</div>)}
             </p>
             </div>
             

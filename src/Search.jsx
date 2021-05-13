@@ -13,6 +13,10 @@ function Search({handleSearch}){
           <option value="dragon">Dragon</option>
           <option value="ghost">Ghost</option>
           <option value="rock">Rock</option>
+          <option value="steel">Steel</option>
+          <option value="bug">Bug</option>
+          <option value="electric">Electric</option>
+          <option value="psychic">Psychic</option>
           </select>
           <div className="d-flex justify-content-center">
           <button  className = "btn btn-primary mt-2" onClick={()=>handleSearch(value)}>Search</button>
