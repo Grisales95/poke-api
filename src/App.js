@@ -24,7 +24,7 @@ function App(){
          getUrlPokemon()
       }
       
-  }, [element,A,B])
+  }, [url,element,A,B])
 
   const handleNext = () => {
     setA(A + 10);
