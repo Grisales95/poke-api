@@ -37,23 +37,28 @@ const handlePrev = () => {
 };
 
   return(
-    <div>
-       <h1>Find your Pokemon by type!</h1>
+    <div className="container">
+      <div className = "d-flex justify-content-center my-5 color-white">
+      <h1>Find your Pokemon by type!</h1>
+      </div>
        <Search handleSearch = {setElement} />
-            {urls ? (
+          <div className=" container-pokemon">
+          {urls ? (
                 urls.map((url) => (
-                    <Pokemon url={url.pokemon.url} key={url.pokemon.name} />
+                      <Pokemon url={url.pokemon.url} key={url.pokemon.name} />     
                 ))
             ) : (
-                <h2>Pokemon</h2>
+                <h2 className="d-none">Pokemon</h2>
             )}
-        <p>
-                {A !== 0 && <button onClick={handlePrev}>atras</button>}
+          </div>
+           
+        <div className="d-flex justify-content-center my-3">
+                {A !== 0 && <button className = "btn btn-danger mx-2" onClick={handlePrev}>atras</button>}
 
                 {B <= total && (
-                    <button onClick={handleNext}>siguiente</button>
+                    <button className = "btn btn-primary" onClick={handleNext}>siguiente</button>
                 )}
-            </p>
+            </div>
     </div>
   )
 }
